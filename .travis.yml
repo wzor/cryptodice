@@ -3,5 +3,14 @@ language: python
 python:
   - "3.6"
 
+before_install:
+  - git clone https://github.com/ethereum/viper.git
+  - cd viper
+  - make
+
+install:
+  - pip install ethereum
+  - pip install pytest
+
 script:
   - python tests/test.py
