@@ -13,4 +13,4 @@ install:
   - pip install pytest
 
 script:
-  - python ~/tests/test.py
+  - python tests/test.py
