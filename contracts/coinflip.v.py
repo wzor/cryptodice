@@ -31,6 +31,7 @@ def bid(_bet: bool):
     self.sold = True
     log.Bid(self.player, self.bet_value)
 
+# modify this
 @public
 def play():
     assert block.timestamp >= self.auction_end
@@ -45,14 +46,14 @@ def play():
             log.Played(self.seller, self.bet_value)
     self.ended = True
 
-@private
-def random():
-    return as_num256(sha3(block.timestamp))
+#@private
+#def random():
+#    return as_num256(sha3(block.timestamp))
 
-@private
-def compare(_odd):
-    result = self.random % 2
-    if _odd:
-        return result > 0
-    else:
-        return result == 0
+#@private
+#def compare(_odd):
+#    result = self.random % 2
+#    if _odd:
+#        return result > 0
+#    else:
+#        return result == 0
